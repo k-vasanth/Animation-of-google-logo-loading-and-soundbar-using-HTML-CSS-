@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .liva{
+            height: 50px;
+            width: 20px;
+            position: relative;
+            border-radius: 10px;
+            background-color: rebeccapurple;
+            animation-name: colorchange;
+            animation-duration: .6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform: translateY(400px);
+            margin: 5px;
+            margin-top: 300px;
+        }
+        .kid1{
+            animation-name: colorchange;
+            animation-delay: 0.2s;
+        }
+        .kid2{
+        animation-name: colorchange;
+        animation-delay: 0.5s;
+        }
+        .kid3{
+        animation-name: colorchange;
+        animation-delay: 0.1s;
+        }
+        .kid4{
+        animation-name: colorchange;
+        animation-delay: 0.4s;
+        }
+        .kid5{
+        animation-name: colorchange;
+        animation-delay: 0.6s;
+        }.kid6{
+        animation-name: colorchange;
+        animation-delay: 0.3s;
+        }
+        div{
+            display:flex
+            
+        }
+        @keyframes colorchange{
+           
+            from{
+                transform: scaleY(2);
+                background: blue;
+            }
+            to{
+                transform: scaleY(10) ;
+                background:blueviolet;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="liva kid1"></div>
+    <div class="liva kid2"></div>
+    <div class="liva kid3"></div>
+    <div class="liva kid4"></div>
+    <div class="liva kid5"></div>
+    <div class="liva kid6"></div>
+</div>
+</body>
+</html>
